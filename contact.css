@@ -31,7 +31,7 @@ body *{
 }
 #content-principal{
     display: grid;
-    grid-template-rows: 1fr 4fr 1fr;
+    justify-content: center;
 }
 #cabecera{
     text-align: end;
@@ -109,7 +109,11 @@ footer{
     color: white;
     width: 100%;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+}
+
+footer p{
+    margin-top: 35px;
 }
 
 
@@ -123,15 +127,62 @@ h3{
 }
 
 form{
-    background-color: rgb(223, 150, 162);
+    margin-top: 100px;
+    
 }
 
 #formulario{
     display: flex; 
     flex-direction: column; 
     align-items: center;
+   
+    
+}
+
+label{
+    color: white;
 }
 
 input{
     width: 300px;
+    height: 40px;
+    background:#888 ;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+input:hover{
+    cursor: pointer;
+    box-shadow: 4px 4px 4px #43aebf;
+}
+
+input:focus{
+    background: #43aebf;
+}
+
+
+
+.boton_form{
+    text-decoration: none;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    margin: 0% 45% 0 45%;
+    color: white;
+    background-color: #888;
+    justify-content: center;
+    border-radius: 10px;
+    padding-top: 4px;
+    transition: 0.5s;
+    margin-bottom: 5px;
+}
+
+.boton_form:hover{
+    box-shadow: 2px 2px 15px 0 #43aebf
+}
+
+legend{
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
 }

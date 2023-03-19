@@ -47,10 +47,6 @@ body *{
     margin-left: 5%;
 }
 
-#titulo h1{
-color: #888;
-font-size: 4em;
-}
 
 #titulo h2{
     color: white;
@@ -95,13 +91,45 @@ font-size: 4em;
 }
 
 /*EFECTOS*/
+.contenedor {
+	margin: auto;
+	display: table;
+}
+
+h1 { 
+	position: relative; 
+	float: left;
+	color: #fff;
+	font-size: 7em;
+}
+
+h1 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: 222222;
+    border-left: 1px solid white;
+    animation: escribir 5s steps(30) 1 alternate;
+    
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
 
 #menu li a:hover{
     text-shadow: 1px 1px 1px white;
     font-size: 25px;
 }
 /*FIN EFECTOS*/
+/* TÍTULO*/
+h3{
+    font-size: 3em;
+    color: #888;
+}
 
+/*FIN TÍTULO*/
 
 
 footer{

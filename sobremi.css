@@ -26,15 +26,17 @@ body *{
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-rows: 0.5fr 2.4fr;
+    grid-template-rows: 0.5fr  5fr 0.5fr;
     position: fixed;
 }
 #content-principal{
     display: grid;
-    grid-template-rows: 1fr 3fr 1fr;
+    justify-content: center;
+    grid-template-rows: 1fr 5fr;
 }
 #cabecera{
     text-align: end;
+    height: max-content;
     
 }
 
@@ -45,11 +47,18 @@ body *{
 #titulo{
     padding: 0;
     margin-left: 5%;
+    
 }
 
-
 #titulo h2{
+color: #888;
+font-size: 3em;
+text-align: left;
+}
+
+#titulo h3{
     color: white;
+    text-align: left;
     
 }
 
@@ -91,70 +100,76 @@ body *{
 }
 
 /*EFECTOS*/
-.contenedor {
-	margin: auto;
-	display: table;
-}
-
-h1 { 
-	position: relative; 
-	float: left;
-	color: #fff;
-	font-size: 7em;
-}
-
-h1 span {
-    position:absolute;
-    right:0;
-    width:0;
-    background: 222222;
-    border-left: 1px solid white;
-    animation: escribir 5s steps(30) 1 alternate;
-    
-}
-
-@keyframes escribir {
-    from { width: 100% }
-    to { width:0 }
-}
 
 #menu li a:hover{
     text-shadow: 1px 1px 1px white;
     font-size: 25px;
 }
-/*FIN EFECTOS*/
-/* TÍTULO*/
-h3{
-    font-size: 3em;
-    color: #888;
-}
 
-/*FIN TÍTULO*/
+
+
+
+/*FIN EFECTOS*/
+
 
 
 footer{
     color: white;
     width: 100%;
     text-align: center;
-    margin-bottom: 10px;
+    margin-top: 18px;
 }
 
-#tecnologias{
-    padding: 20px;
-    margin: 0% 25% 0% 25%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
+footer p{
+    margin-top: 35px;
 }
 
 
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-    box-shadow: 2px 2px 15px 0 #43aebf;
 
-    border-radius: 15px;
+
+/*Estilos tabla*/
+
+
+
+
+
+table {
+    margin: 0 25% 0 25%;
+    height: 50%;
+    width: 50%;
+    border-collapse:collapse;
+    padding:5px;
+    box-shadow: 3px 3px 4px #888;
+    border-radius: 5px;
+}
+
+table tr {
+padding: 5px;
+border:2px #888;;
+}
+
+table th {
     
+    font-size: 2em;
+    padding:5px;
+    background: black;
+    color: white;
+}
+table td {
+    
+    text-align:center;
+    padding:5px;
+    background: black;
+    color: white;
+    border:2px #888;
 }
 
+
+li{
+    background:black ;
+}
+
+.impar{
+    color: #888;
+}
